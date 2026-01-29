@@ -1,5 +1,7 @@
 import pygame
 import random
+import asyncio
+import sys
 
 # Initialize pygame
 pygame.init()
@@ -26,7 +28,6 @@ food_x = random.randrange(0, SCREEN_WIDTH, SQUARE_SIZE)
 food_y = random.randrange(0, SCREEN_HEIGHT, SQUARE_SIZE)
 
 score = 0
-clock = pygame.time.Clock()
 
 running = True
 while running:
@@ -82,6 +83,6 @@ while running:
     pygame.draw.rect(screen, RED, (food_x, food_y, SQUARE_SIZE, SQUARE_SIZE))
     pygame.display.flip()
 
-    clock.tick(10)  # move snake slower for grid-style movement
+    await asyncio.sleep(1 / 10)
 
 pygame.quit()

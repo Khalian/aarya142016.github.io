@@ -3,15 +3,24 @@
 <head>
     <title>The Snake Game</title>
 
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+      <link rel="stylesheet"
+        href="https://pyscript.net/releases/2025.11.2/core.css">
+  <script type="module"
+          src="https://pyscript.net/releases/2025.11.2/core.js"></script>
+   <style>
+    body {
+        background-color: gray;
+    }
+
+
+   </style>       
 </head>
 <body>
 
     <h1>Snake Game</h1>
-    <canvas id="canvas"></canvas>
+     <canvas id="canvas" style="image-rendering: pixelated"></canvas>
 
-    <script type="py-game" src="snake/snake.py"></script>
+    <script type="py-game" src="/snake/snake.py"></script>
 
 </body>
 </html>
