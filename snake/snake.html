@@ -8,10 +8,26 @@
   <script type="module"
           src="https://pyscript.net/releases/2025.11.2/core.js"></script>
    <style>
+     /* Center everything in the page */
     body {
-        background-color: gray;
+      display: flex;            /* Use flexbox */
+      flex-direction: column;   /* Stack elements vertically */
+      justify-content: center;  /* Vertical centering */
+      align-items: center;      /* Horizontal centering */
+      height: 100vh;            /* Full viewport height */
+      margin: 0;                /* Remove default margin */
+      background-color: #f0f0f0; /* Optional background */
+      font-family: sans-serif;
     }
 
+    h1 {
+      margin-bottom: 20px;     /* Space between title and canvas */
+    }
+
+    canvas {
+      image-rendering: pixelated;
+      border: 2px solid black; /* Optional for visibility */
+    }
 
    </style>       
 </head>
